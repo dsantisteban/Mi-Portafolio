@@ -1,0 +1,133 @@
+/* Inserta tu codigo CSS aqui */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+section ,.context ,hr{
+	text-align: center;
+}
+hr{
+	width: 40px;
+	margin: 0 auto;
+	background-color: #F2755A;
+	height: 2px;
+	border:0;
+}
+header{
+	background: url("../img/header.jpg") no-repeat;
+	background-size: cover;
+	background-position: 0px -120px;
+}
+.navegador nav {
+	text-align: right;
+
+}
+.navegador , .navegador nav a{
+	color:white;
+	padding: 1% ;
+	font-size: 0.8em;
+}
+.navegador nav a:hover, .navegador p:hover{
+	font-weight: bold;
+}
+.context{
+	padding: 15% 21% 20%; 
+	color: white;
+}
+.context p:nth-child(1){
+	font-size: 3.1em;
+	font-weight: bold;
+	line-height: 1; 
+	padding-bottom: 2%;
+}
+.context p:nth-child(3){
+	font-size: 0.85em;
+	padding:4% 10%;
+ 
+}
+.context a{
+	color:white;
+	padding:2%;
+	font-size: 0.8em;
+	background-color: #F05F40;
+	border-radius:50px;
+	font-weight: bold;
+}
+.aboutme {
+	background-color: #F05F40;
+	color:white;
+}
+.aboutme .container .row{
+	padding: 5% 20%;
+}
+.aboutme .container .row hr{
+	background-color: white;
+}
+.aboutme .container .row p:nth-child(1){
+	font-size: 1.2em;	
+	font-weight: bold;
+}
+.aboutme .container .row p:nth-child(3){
+	font-size: 0.9em;
+	padding:2% 8.5%;
+	
+}
+.services .container .row:nth-child(1) {
+	padding:5% 18% 2%;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.services .container .row:nth-child(2) {
+	padding:0% 13% 2%;
+}
+.services i {
+	color:#F05F40;
+	font-size:2.3em;	
+}
+.services .col-md-3 p:nth-child(2) {
+	font-size: 1.3em;
+	padding-top: 10%;
+}
+.services .col-md-3 p:nth-child(3) {
+	color:#6F707E;
+	font-size: 0.9em;
+}
+.photos img{
+	width: 100%;
+}
+
+.photos .row , .photos .col-md-4{
+	padding: 0%;
+	margin: 0%;
+}
+
+.github{
+	background-color: #222222;
+	padding: 2% 0% 4%;
+}
+.github p{
+	color:white;
+	font-size:1.8em;
+	padding-bottom: 1%;
+}
+.github a{
+	color:#222222;
+	background: white;
+	padding:1%;
+	font-weight: bold;
+	border-radius: 50px;
+}
+
+
+@media screen and (max-width: 900px) {
+	header{
+		background-size:140% 100%;
+		background-position: 0px 0px;
+	
+	}
+	
+}
