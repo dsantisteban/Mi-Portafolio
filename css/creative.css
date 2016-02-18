@@ -7,7 +7,7 @@
 a:hover{
 	text-decoration: none;
 }
-section ,.context ,hr{
+section ,.context {
 	text-align: center;
 }
 hr{
@@ -22,6 +22,11 @@ header{
 	background-size: cover;
 	background-position: 0px -120px;
 }
+header .container .navegador{
+	margin: 0% -9%;
+	padding: 0;
+
+}
 .navegador nav {
 	text-align: right;
 
@@ -29,9 +34,13 @@ header{
 .navegador , .navegador nav a{
 	color:white;
 	padding: 1% ;
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
-.navegador nav a:hover, .navegador p:hover{
+.navegador nav a:hover, 
+.navegador p:hover, 
+.context p:nth-child(1), 
+.github a, 
+.context a{
 	font-weight: bold;
 }
 .context{
@@ -40,14 +49,12 @@ header{
 }
 .context p:nth-child(1){
 	font-size: 3.1em;
-	font-weight: bold;
 	line-height: 1; 
 	padding-bottom: 2%;
 }
 .context p:nth-child(3){
 	font-size: 0.85em;
-	padding:4% 10%;
- 
+	padding:4% 10%; 
 }
 .context a{
 	color:white;
@@ -55,52 +62,84 @@ header{
 	font-size: 0.8em;
 	background-color: #F05F40;
 	border-radius:50px;
-	font-weight: bold;
 }
-.aboutme {
+#aboutme {
 	background-color: #F05F40;
 	color:white;
 }
-.aboutme .container .row{
+#aboutme .container .row{
 	padding: 5% 20%;
 }
-.aboutme .container .row hr{
+#aboutme .container .row hr{
 	background-color: white;
 }
-.aboutme .container .row p:nth-child(1){
-	font-size: 1.2em;	
-	font-weight: bold;
+#aboutme .container .row p:nth-child(1), 
+#services .container .row:nth-child(1), 
+#contactame p:nth-child(1){
+	font-size: 1.56em;	
 }
-.aboutme .container .row p:nth-child(3){
+#aboutme .container .row p:nth-child(3){
 	font-size: 0.9em;
 	padding:2% 8.5%;
 	
 }
-.services .container .row:nth-child(1) {
+#services .container .row:nth-child(1) {
 	padding:5% 18% 2%;
-	font-size: 1.2em;
-	font-weight: bold;
 }
-.services .container .row:nth-child(2) {
+#services .container .row:nth-child(2) {
 	padding:0% 13% 2%;
 }
-.services i {
+#services i {
 	color:#F05F40;
 	font-size:2.3em;	
 }
-.services .col-md-3 p:nth-child(2) {
+#services .col-md-3 p:nth-child(2) {
 	font-size: 1.3em;
 	padding-top: 10%;
 }
-.services .col-md-3 p:nth-child(3) {
+#services .col-md-3 p:nth-child(3) {
 	color:#6F707E;
 	font-size: 0.9em;
 }
-.photos img{
+
+#photos .fil-1 .col-md-4:nth-child(1){
+	background: url("../img/portfolio/1.jpg") no-repeat;
+	background-size: cover;
+	height: 270px;
+
+}
+#photos .fil-1 .col-md-4:nth-child(2){
+	background: url("../img/portfolio/2.jpg") no-repeat;
+	background-size: cover;
+	height: 270px;
+
+}
+#photos .fil-1 .col-md-4:nth-child(3){
+	background: url("../img/portfolio/3.jpg") no-repeat;
+	background-size: cover;
+	height: 270px;
+}
+#photos .fil-2 .col-md-4:nth-child(1){
+	background: url("../img/portfolio/4.jpg")no-repeat;
+	background-size: cover;
+	height: 270px;
+}
+#photos .fil-2 .col-md-4:nth-child(2){
+	background: url("../img/portfolio/5.jpg") no-repeat;
+	background-size: cover;
+	height: 270px;
+}
+#photos .fil-2 .col-md-4:nth-child(3){
+	background: url("../img/portfolio/6.jpg") no-repeat;
+	background-size: cover;
+	height: 270px;
+
+}
+#photos img{
 	width: 100%;
 }
-
-.photos .row , .photos .col-md-4{
+#photos .row , 
+#photos .col-md-4{
 	padding: 0%;
 	margin: 0%;
 }
@@ -111,23 +150,54 @@ header{
 }
 .github p{
 	color:white;
-	font-size:1.8em;
+	font-size:1.6em;
 	padding-bottom: 1%;
 }
 .github a{
 	color:#222222;
+	font-size: 0.8em;
 	background: white;
-	padding:1%;
-	font-weight: bold;
+	padding:1% 2%;
 	border-radius: 50px;
 }
 
+#contactame p:nth-child(3){
+	color:#6F707E;
+	font-size: 1em;	
+	padding: 2% 4%;
+		
+}
+#contactame .container{
+	padding: 2% 20% 7%;
+	font-size: 0.9em;	
+}
+#contactame .col-md-6 i{
+	font-size: 3em;
+}
+
+.opacity {
+		background-color: rgba(240,95,64,0.6);
+		padding: 105px;
+		
+}
+.opacity2 {
+		background-color: rgba(240,95,64,0.6);
+		padding: 80px;
+		
+}
 
 @media screen and (max-width: 900px) {
+
+
 	header{
 		background-size:140% 100%;
 		background-position: 0px 0px;
 	
 	}
-	
+	header .container .navegador{
+	margin: 0% -5%;
+	padding: 0;
+	}
+
+
 }
