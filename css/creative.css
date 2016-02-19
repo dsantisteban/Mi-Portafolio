@@ -231,14 +231,20 @@ aside{
 		padding: 18% 18% 2%;
 	}
 	#services .container .row:nth-child(2) {
-		padding: 15% 0% ;
+		padding: 5% 0% 18% ;
 	}
 	#services .col-md-3 p:nth-child(2) {
 		font-size: 1.1em;
 	}
 	#services .col-md-3 p:nth-child(3) {
 		font-size: 0.8em;
+	}
+	#services .col-md-3 p:nth-child(2) {
+    	padding-top: 3%;
 	}	
+	#services .col-md-3 {
+    	padding-top: 10%;
+	}
 	.opacity {
 		background-color: rgba(240, 95, 64,0.9);
 	}
