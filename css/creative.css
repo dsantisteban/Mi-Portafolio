@@ -1,8 +1,14 @@
 /* Inserta tu codigo CSS aqui */
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.row{
+	margin:0;
+}
+header{
+	border:none;
 }
 a:hover{
 	text-decoration: none;
@@ -13,38 +19,58 @@ section ,.context {
 hr{
 	width: 40px;
 	margin: 0 auto;
-	background-color: #F2755A;
 	height: 2px;
 	border:0;
 }
-header{
+aside{
 	background: url("../img/header.jpg") no-repeat;
+	background-position: 0px -150px;
 	background-size: cover;
-	background-position: 0px -120px;
+	width: 100%;	
 }
-header .container .navegador{
-	margin: 0% -9%;
-	padding: 0;
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover, 
+.navbar-inverse {
+	background-color: transparent;
+}
+.cambio, hr{
+	background-color: #F2755A;
+}
 
-}
-.navegador nav {
-	text-align: right;
-
-}
-.navegador , .navegador nav a{
+.navbar-inverse .navbar-brand,  
+.navbar-inverse .navbar-nav>li>a, 
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover, 
+.navbar-inverse .navbar-collapse, 
+.navbar-inverse .navbar-form{
 	color:white;
-	padding: 1% ;
-	font-size: 0.9em;
+	background-color: transparent;
 }
-.navegador nav a:hover, 
+.navbar-right {
+	margin-right:0px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: gray;
+}
+.navbar-inverse .navbar-toggle {
+	border-color: gray;
+}
+.navbar-inverse .navbar-nav>li>a:hover ,
 .navegador p:hover, 
 .context p:nth-child(1), 
 .github a, 
 .context a{
 	font-weight: bold;
 }
+.navegador p{
+	margin:0;
+}
+.navbar-inverse {
+	border: 0;
+} 
 .context{
-	padding: 15% 21% 20%; 
+	padding: 15% 25% 16%; 
 	color: white;
 }
 .context p:nth-child(1){
@@ -54,7 +80,7 @@ header .container .navegador{
 }
 .context p:nth-child(3){
 	font-size: 0.85em;
-	padding:4% 10%; 
+	padding:4% 8%; 
 }
 .context a{
 	color:white;
@@ -68,7 +94,7 @@ header .container .navegador{
 	color:white;
 }
 #aboutme .container .row{
-	padding: 5% 20%;
+	padding: 5% 18.5%;
 }
 #aboutme .container .row hr{
 	background-color: white;
@@ -87,7 +113,7 @@ header .container .navegador{
 	padding:5% 18% 2%;
 }
 #services .container .row:nth-child(2) {
-	padding:0% 13% 2%;
+	padding:0% 10% 2%;
 }
 #services i {
 	color:#F05F40;
@@ -102,39 +128,6 @@ header .container .navegador{
 	font-size: 0.9em;
 }
 
-#photos .fil-1 .col-md-4:nth-child(1){
-	background: url("../img/portfolio/1.jpg") no-repeat;
-	background-size: cover;
-	height: 270px;
-
-}
-#photos .fil-1 .col-md-4:nth-child(2){
-	background: url("../img/portfolio/2.jpg") no-repeat;
-	background-size: cover;
-	height: 270px;
-
-}
-#photos .fil-1 .col-md-4:nth-child(3){
-	background: url("../img/portfolio/3.jpg") no-repeat;
-	background-size: cover;
-	height: 270px;
-}
-#photos .fil-2 .col-md-4:nth-child(1){
-	background: url("../img/portfolio/4.jpg")no-repeat;
-	background-size: cover;
-	height: 270px;
-}
-#photos .fil-2 .col-md-4:nth-child(2){
-	background: url("../img/portfolio/5.jpg") no-repeat;
-	background-size: cover;
-	height: 270px;
-}
-#photos .fil-2 .col-md-4:nth-child(3){
-	background: url("../img/portfolio/6.jpg") no-repeat;
-	background-size: cover;
-	height: 270px;
-
-}
 #photos img{
 	width: 100%;
 }
@@ -160,12 +153,17 @@ header .container .navegador{
 	padding:1% 2%;
 	border-radius: 50px;
 }
-
+.opacity {
+	background-color: none;
+}
+.ph-porta{
+	opacity: none;
+}
 #contactame p:nth-child(3){
 	color:#6F707E;
 	font-size: 1em;	
 	padding: 2% 4%;
-		
+
 }
 #contactame .container{
 	padding: 2% 20% 7%;
@@ -175,29 +173,102 @@ header .container .navegador{
 	font-size: 3em;
 }
 
-.opacity {
-		background-color: rgba(240,95,64,0.6);
-		padding: 105px;
-		
-}
-.opacity2 {
-		background-color: rgba(240,95,64,0.6);
-		padding: 80px;
-		
+#contactame .row .col-md-6:nth-child(2) p{
+	color:#F05F40;
+
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 100px) and (max-width:900px){
 
+	aside{
+		background-size:120% 100%;
+		background-position: 0px 20px;
+		
+	}
+	aside .context{
+		padding: 28% 2% ;
 
-	header{
-		background-size:140% 100%;
-		background-position: 0px 0px;
-	
+	}	
+	aside .context p:nth-child(1){
+		font-size: 1.7em;
 	}
-	header .container .navegador{
-	margin: 0% -5%;
-	padding: 0;
+	aside .context p:nth-child(2){
+		font-size: 2.5em;
 	}
+	.navbar-header {
+		background: white;
+	}
+	.navbar-inverse {
+		border-bottom: 2px solid #F05F40;
+	} 
+	.navbar-inverse .navbar-brand, 
+	.navbar-inverse .navbar-brand:hover	{
+		color: #F05F40;
+	}
+	.navbar-inverse .navbar-collapse, 
+	.navbar-inverse .navbar-form {
+		background-color: #F05F40;
+		color: white;
+	}
+	.context p:nth-child(3) {
+		font-size: 0.75em;
+		padding: 5% 0% 10%;
+		color: rgba(255,255,255,0.7);
+	}
+	.context a {
+		padding: 3% 6%;
+		font-size: 0.6em;
+	}
+	#aboutme .container .row {
+		padding: 18% 0%;	
+	}
+	#aboutme .container .row p:nth-child(3) {
+		font-size: 0.75em;
+		padding: 5% 0%;
+		color: rgba(255,255,255,0.7);
+	}
+	#services .container .row:nth-child(1) {
+		padding: 18% 18% 2%;
+	}
+	#services .container .row:nth-child(2) {
+		padding: 15% 0% ;
+	}
+	#services .col-md-3 p:nth-child(2) {
+		font-size: 1.1em;
+	}
+	#services .col-md-3 p:nth-child(3) {
+		font-size: 0.8em;
+	}	
+	.opacity {
+		background-color: rgba(240, 95, 64,0.9);
+	}
+	.ph-porta{
+		position: relative;
+		opacity: 0.1;
+	}
+	.text{
+		position: absolute;
+		width: 100%;	
+		top: 50%;
+		font-size: 1.7rem;
+		transform: translateY(-50%);
+		color:white;
+	}
+
+	.github{
+		padding: 10% 4%;
+	}
+	.github p{
+		font-size: 1.5em;
+	}
+	.github a{
+		font-size: 0.7em;
+		padding: 3% 6%;
+	}
+	#contactame .container {
+		padding: 17% 1%;
+		font-size: 0.8em;
+	}			
 
 
 }
